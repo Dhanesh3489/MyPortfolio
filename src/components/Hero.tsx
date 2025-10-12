@@ -26,9 +26,11 @@ export const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="animate-fade-in space-y-6 text-center lg:text-left">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold gradient-text animate-float">
-              Gangireddy Dhanesh
-            </h1>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold gradient-text animate-float leading-tight"
+               style={{ overflow: 'visible', paddingBottom: '0.3em' }}
+              >Gangireddy Dhanesh
+             </h1>
+
             
             <p className="text-xl md:text-2xl lg:text-3xl text-primary font-display tracking-wide text-glow">
               Aspiring Software Engineer
