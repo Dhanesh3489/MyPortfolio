@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import profilePic from "@/assets/dhanesh.jpg";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -22,6 +24,11 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="animate-fade-in space-y-6">
+          <Avatar className="h-32 w-32 md:h-40 md:w-40 mx-auto mb-6 ring-4 ring-primary/50 ring-offset-4 ring-offset-background">
+            <AvatarImage src={profilePic} alt="Gangireddy Dhanesh" />
+            <AvatarFallback className="text-4xl font-display">GD</AvatarFallback>
+          </Avatar>
+          
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold gradient-text animate-float">
             Gangireddy Dhanesh
           </h1>
