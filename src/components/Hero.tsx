@@ -91,19 +91,15 @@ export const Hero = () => {
               </a>
             </div>
           </div>
-
           {/* Right Profile Picture */}
-          {/* Right Profile Picture */}
-<div className="flex justify-center lg:justify-end animate-fade-in">
-  <Avatar className="h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 ring-2 ring-primary/40 ring-offset-4 ring-offset-background">
-    <AvatarImage 
-      src={profilePic} 
-      alt="Gangireddy Dhanesh" 
-      className="object-cover rounded-full"
-    />
-    <AvatarFallback className="text-6xl font-display">GD</AvatarFallback>
-  </Avatar>
-</div>
+          <div className="flex justify-center lg:justify-end animate-fade-in">
+            <Avatar className="h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 ring-4 ring-primary/50 ring-offset-8 ring-offset-background/50 glow-primary">
+              <AvatarImage src={profilePic} alt="Gangireddy Dhanesh" className="object-cover" />
+              <AvatarFallback className="text-6xl font-display">GD</AvatarFallback>
+            </Avatar>
+          </div>
+        </div>
+      </div>
 
 
       {/* Scroll indicator */}
