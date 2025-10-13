@@ -16,14 +16,16 @@ export const Resume = () => {
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
             Get a comprehensive overview of my skills, experience, and educational background.
           </p>
-          <Button 
-            variant="hero" 
-            size="lg"
-            className="group"
-          >
-            <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-            Download Resume
-          </Button>
+          <div className="flex justify-center">
+            <Button 
+              variant="hero" 
+              size="lg"
+              className="group"
+            >
+              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+              Download Resume
+            </Button>
+          </div>
         </Card>
       </div>
     </section>
