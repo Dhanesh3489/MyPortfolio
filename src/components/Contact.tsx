@@ -5,25 +5,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
-
 export const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. I'll get back to you soon."
     });
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
   };
-
-  return (
-    <section id="contact" className="py-20 px-4 bg-gradient-hero">
+  return <section id="contact" className="py-20 px-4 bg-gradient-hero">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-12 gradient-text">
           Get in Touch
@@ -37,9 +37,7 @@ export const Contact = () => {
                 <Mail className="h-8 w-8 text-primary" />
                 <div>
                   <h3 className="font-display text-lg text-foreground">Email</h3>
-                  <a href="mailto:contact@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    contact@example.com
-                  </a>
+                  <a href="mailto:contact@example.com" className="text-muted-foreground hover:text-primary transition-colors">dhaneshgangireddy@gmail.com</a>
                 </div>
               </div>
             </Card>
@@ -86,47 +84,34 @@ export const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2 text-foreground">Name</label>
-                <Input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="glass border-primary/30 focus:border-primary"
-                  required
-                />
+                <Input type="text" value={formData.name} onChange={e => setFormData({
+                ...formData,
+                name: e.target.value
+              })} className="glass border-primary/30 focus:border-primary" required />
               </div>
               
               <div>
                 <label className="block text-sm font-medium mb-2 text-foreground">Email</label>
-                <Input
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="glass border-primary/30 focus:border-primary"
-                  required
-                />
+                <Input type="email" value={formData.email} onChange={e => setFormData({
+                ...formData,
+                email: e.target.value
+              })} className="glass border-primary/30 focus:border-primary" required />
               </div>
               
               <div>
                 <label className="block text-sm font-medium mb-2 text-foreground">Message</label>
-                <Textarea
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="glass border-primary/30 focus:border-primary min-h-[150px]"
-                  required
-                />
+                <Textarea value={formData.message} onChange={e => setFormData({
+                ...formData,
+                message: e.target.value
+              })} className="glass border-primary/30 focus:border-primary min-h-[150px]" required />
               </div>
               
-              <Button 
-                type="submit" 
-                variant="hero" 
-                className="w-full"
-              >
+              <Button type="submit" variant="hero" className="w-full">
                 Send Message
               </Button>
             </form>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
