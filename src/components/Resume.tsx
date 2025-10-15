@@ -10,7 +10,7 @@ export const Resume = () => {
           Resume
         </h2>
         
-        <Card className="glass p-12 text-center hover:border-primary/50 transition-all duration-300 hover:glow-primary">
+        <Card className="glass p-4 sm:p-12 text-center hover:border-primary/50 transition-all duration-300 hover:glow-primary">
           <FileText className="h-24 w-24 mx-auto mb-6 text-primary animate-float" />
           <h3 className="font-display text-2xl mb-4 text-foreground">Download My Resume</h3>
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
@@ -20,10 +20,10 @@ export const Resume = () => {
             <Button 
               variant="hero" 
               size="lg"
-              className="group w-full sm:w-auto text-sm sm:text-base"
+              className="group w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6"
             >
-              <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-bounce" />
-              Download Resume
+              <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:animate-bounce flex-shrink-0" />
+              <span className="truncate">Download Resume</span>
             </Button>
           </div>
         </Card>
