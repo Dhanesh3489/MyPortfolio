@@ -23,16 +23,16 @@ export const Contact = () => {
       message: ""
     });
   };
-  return <section id="contact" className="py-20 px-4 bg-gradient-hero">
-      <div className="container mx-auto max-w-6xl">
+  return <section id="contact" className="py-20 px-6 sm:px-8 md:px-4 bg-gradient-hero">
+      <div className="container mx-auto max-w-6xl px-0">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-12 gradient-text">
           Get in Touch
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {/* Contact Info */}
           <div className="space-y-6">
-            <Card className="glass p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
+            <Card className="glass p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
               <div className="flex items-center gap-4">
                 <Mail className="h-8 w-8 text-primary" />
                 <div>
@@ -42,7 +42,7 @@ export const Contact = () => {
               </div>
             </Card>
             
-            <Card className="glass p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
+            <Card className="glass p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
               <div className="flex items-center gap-4">
                 <Phone className="h-8 w-8 text-primary" />
                 <div>
@@ -54,7 +54,7 @@ export const Contact = () => {
               </div>
             </Card>
             
-            <Card className="glass p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
+            <Card className="glass p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
               <div className="flex items-center gap-4">
                 <Linkedin className="h-8 w-8 text-primary" />
                 <div>
@@ -66,7 +66,7 @@ export const Contact = () => {
               </div>
             </Card>
             
-            <Card className="glass p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
+            <Card className="glass p-4 sm:p-6 hover:border-primary/50 transition-all duration-300 hover:glow-primary">
               <div className="flex items-center gap-4">
                 <Github className="h-8 w-8 text-primary" />
                 <div>
@@ -80,7 +80,7 @@ export const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <Card className="glass p-8 border-primary/20">
+          <Card className="glass p-4 sm:p-8 border-primary/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium mb-2 text-foreground">Name</label>
