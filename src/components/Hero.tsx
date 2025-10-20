@@ -94,7 +94,7 @@ export const Hero = () => {
           {/* Right Profile Picture */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <Avatar className="h-64 w-64 md:h-80 md:w-80 lg:h-96 lg:w-96 ring-4 ring-primary/50 ring-offset-8 ring-offset-background shadow-2xl glow-primary bg-background/20">
-              <AvatarImage src={profilePic} alt="Gangireddy Dhanesh" className="object-contain object-center" />
+              <AvatarImage src={profilePic} alt="Gangireddy Dhanesh" className="object-cover object-center" />
               <AvatarFallback className="text-6xl font-display">GD</AvatarFallback>
             </Avatar>
           </div>
